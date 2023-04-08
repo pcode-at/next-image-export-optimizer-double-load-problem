@@ -7,7 +7,7 @@ import LisiPng from "../public/uploads/Lisi.png"
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  console.log("render")
+  console.log("render page")
   return (
     <>
       <Head>
@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div>
-          <ExportedImage src={LisiPng} alt="" layout="responsive" priority onLoadingComplete={() => {console.log('loading complete')}} onError={() => {console.log('image error')}}  />
+          <ExportedImage src={LisiPng} alt="" priority onLoadingComplete={() => {console.log('image loading complete')}} onError={() => {console.log('image error')}}  />
         </div>
         <div className={styles.description}>
           <p>
