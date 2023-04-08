@@ -21,7 +21,7 @@ const nextConfig = {
     // If nextImageExportOptimizer_generateAndUseBlurImages is false and you
     // forget to set `placeholder="empty"`, you'll see 404 errors for the missing
     // placeholder images in the console.
-    nextImageExportOptimizer_generateAndUseBlurImages: true,
+    nextImageExportOptimizer_generateAndUseBlurImages: false,
   },
 }
 
