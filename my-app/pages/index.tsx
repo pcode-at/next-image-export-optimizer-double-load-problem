@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div>
-          <ExportedImage src={LisiPng} alt="" priority onLoadingComplete={() => {console.log('image loading complete')}} onError={() => {console.log('image error')}}  />
+          <ExportedImage priority src={LisiPng} alt="" placeholder={"empty"} />
         </div>
         <div className={styles.description}>
           <p>
