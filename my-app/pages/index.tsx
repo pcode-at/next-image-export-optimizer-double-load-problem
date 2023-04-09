@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 import LisiPng from "../public/uploads/Lisi.png"
 
 const inter = Inter({ subsets: ['latin'] })
@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div>
-          <ExportedImage src={LisiPng} alt="" priority onLoadingComplete={() => {console.log('image loading complete')}} onError={() => {console.log('image error')}}  />
+          <Image src={LisiPng} alt="" onLoadingComplete={() => {console.log('image loading complete')}} onError={() => {console.log('image error')}}  />
         </div>
         <div className={styles.description}>
           <p>
@@ -32,7 +32,7 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               By{' '}
-              <ExportedImage
+              <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
                 className={styles.vercelLogo}
@@ -45,7 +45,7 @@ export default function Home() {
         </div>
 
         <div className={styles.center}>
-          <ExportedImage
+          <Image
             className={styles.logo}
             src="/next.svg"
             alt="Next.js Logo"
@@ -54,7 +54,7 @@ export default function Home() {
             priority
           />
           <div className={styles.thirteen}>
-            <ExportedImage
+            <Image
               src="/thirteen.svg"
               alt="13"
               width={40}
